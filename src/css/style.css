@@ -1,11 +1,11 @@
 /* Style from index only */
 
 :root {
-    --amarillo: #fdc300;
+    --main: #fdc300;
 }
 
 .scroll {
-    max-height: 250px;
+    height: 250px;
     overflow-y: auto;
 }
 
@@ -35,28 +35,35 @@ a {
 a {
     text-decoration: none;
     font-weight: 700;
-    color: var(--amarillo);
+    color: var(--main);
     transition: ease .3s;
 }
 
+.title-main {
+    color: var(--main);
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-shadow: #000000 1px 1px;
+}
+
 a:hover {
-    color: #ffffff;
+    color: #3e3e3e;
 }
 
 .name {
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--amarillo);
+    color: var(--main);
 }
 
 .selected {
-    border: solid 1px var(--amarillo);
+    border: solid 1px var(--main);
     border-radius: .25rem;
     padding: .1rem;
 }
 
 .simple-item {
-    background-color: var(--amarillo);
+    background-color: var(--main);
     font-weight: 700;
     border-radius: .25rem;
     padding: .2rem;
@@ -68,16 +75,41 @@ a:hover {
     font-size: .8rem;
 }
 
+@media(max-width: 768px) {
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+    .main-content {
+        margin-bottom: 110px;
+    }
+}
+
 footer {
     width: 100%;
-    position: sticky;
+    position: fixed;
     bottom: 0;
 }
 
 blockquote {
-    color: var(--amarillo);
+    color: var(--main);
     font-size: 1.5rem;
     text-align: center;
+}
+
+.pic-cont {
+    margin: 0 auto;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-about {
+    width: 100%;
 }
 
 .ng-progress {
@@ -90,4 +122,48 @@ blockquote {
 
 .lv-progress {
     background-color: #ff2d20 !important;
+}
+
+.mdb-progress {
+    background-color: #10ab50 !important;
+}
+
+.git-progress {
+    background-color: #000000 !important;
+}
+
+.aws-progress {
+    background-color: #ff9900 !important;
+}
+
+.pg-progress {
+    background-color: #326690 !important;
+}
+
+.text-rb {
+    background-color: #cc0000;
+    color: #ffffff;
+    padding: .1rem;
+    border-radius: .3rem;
+}
+
+.nav-link {
+    color: #000000;
+}
+
+.nav-link:hover {
+    color: var(--main);
+}
+
+.gem-list {
+    padding: .5rem 1rem;
+}
+
+.gem-list>li {
+    list-style: none;
+    padding: 0;
+}
+
+.activities-list>li {
+    list-style: circle!important;
 }

@@ -8,6 +8,8 @@
     <title>CV - Enrique Gonzalez</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c039171d93.js" crossorigin="anonymous"></script>
     <!-- Add main js and style -->
     <link rel="stylesheet" href="src/css/style.css">
     <script src="src/js/main.js"></script>
@@ -31,15 +33,34 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid main-content">
         <div class="container">
             <div class="row py-3">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="card">
                         <div class="card-body scroll">
-                            <p class="title mb-3">About Me</p>
-                        </div>
-                        <div class="card-footer">
+                            <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="title nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true">About Me</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="title nav-link " id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="true">Contact Me</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                                    <div class="pic-cont"><img class="img-about" src="src/images/1-06.png" alt=""></div>
+                                    <div class="d-flex justify-content-center">
+                                        <p class="mt-4 px-3 text-center">I am a web developer, I am interested in creating next generation software like: Ruby on Rails Apps, Angular Apps, Laravel Apps, I am outgoing and fun. I think teamwork is the way to go.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <p class="mb-3 phone"><i class="fas fa-mobile-alt"></i> Mobile: <span class="title">7712405072</span></p>
+                                    <p class="mb-3 linkd"><i class="fab fa-linkedin"></i> Linkedin: <span class="title"><a target="blank_" href="https://www.linkedin.com/in/enrique-gonzalez-n/">enrique-gonzalez-n</a></span></p>
+                                    <p class="mb-3 whspp"><i class="fab fa-whatsapp"></i> Send Whatsapp: <span class="title"><a target="blank_" href="https://api.whatsapp.com/send?phone=5217712405072&text=Hola%2C%20me%20gustar%C3%ADa%20contactarte!">Open Whatsapp</a></span></p>
+                                    <p class="mb-3 mail"><i class="fas fa-envelope-square"></i> Email: <span class="title"><a target="blank_" href="mailto:enrique.gonzan@gmail.com">enrique.gonzan@gmail.com</a></span></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="card my-3">
@@ -54,73 +75,226 @@
                             <div class="skill-item">
                                 <p>Angular</p>
                                 <div class="progress">
-                                    <div class="progress-bar ng-progress" role="progressbar" style="width: 65%; color: #ffffff;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">55%</div>
+                                    <div class="progress-bar ng-progress" role="progressbar" style="width: 45%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <p>Laravel</p>
                                 <div class="progress">
-                                    <div class="progress-bar lv-progress" role="progressbar" style="width: 65%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                                    <div class="progress-bar lv-progress" role="progressbar" style="width: 45%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <p>Express</p>
                                 <div class="progress">
-                                    <div class="progress-bar lv-progress" role="progressbar" style="width: 65%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                                    <div class="progress-bar git-progress" role="progressbar" style="width: 30%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">30%</div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <p>MongoDB</p>
                                 <div class="progress">
-                                    <div class="progress-bar lv-progress" role="progressbar" style="width: 65%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                                    <div class="progress-bar mdb-progress" role="progressbar" style="width: 30%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">30%</div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <p>Postgress</p>
                                 <div class="progress">
-                                    <div class="progress-bar lv-progress" role="progressbar" style="width: 65%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                                    <div class="progress-bar pg-progress" role="progressbar" style="width: 45%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
                                 </div>
                             </div>
                             <div class="skill-item">
                                 <p>AWS</p>
                                 <div class="progress">
-                                    <div class="progress-bar lv-progress" role="progressbar" style="width: 65%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                                    <div class="progress-bar aws-progress" role="progressbar" style="width: 30%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <p>Git/Github</p>
+                                <div class="progress">
+                                    <div class="progress-bar git-progress" role="progressbar" style="width: 65%; color: #ffffff;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">65%</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer">
-                        </div>
                     </div>
                 </div>
-                <div class="col-8">
+                <div class="col-12 col-md-8">
                     <div class="card">
                         <div class="card-body scroll">
                             <p class="title mb-3">Work Experience</p>
-                        </div>
-                        <div class="card-footer">
+                            <div class="row">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="current-tab" data-bs-toggle="tab" data-bs-target="#current" type="button" role="tab" aria-controls="current" aria-selected="true">Coatí</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="last-tab" data-bs-toggle="tab" data-bs-target="#last" type="button" role="tab" aria-controls="last" aria-selected="false">Ideeo 4.0</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="legacy-tab" data-bs-toggle="tab" data-bs-target="#legacy" type="button" role="tab" aria-controls="legacy" aria-selected="false">Vesparum Technologies</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="ror-tab" data-bs-toggle="tab" data-bs-target="#ror" type="button" role="tab" aria-controls="ror" aria-selected="false">General RoR <i class="text-rb far fa-gem"></i></button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="current" role="tabpanel" aria-labelledby="current-tab">
+                                        <p>
+                                            <span class="title-main">Coatí</span> <i class="fas fa-arrow-right"></i> <span class="fst-italic fw-lighter text-secondary"> September 2021 - </span>
+                                        </p>
+                                        <p class="fw-lighter">Jr Fullstack Developer</p>
+                                        <p>
+                                            <span class="fw-lighter">Responsabilities:</span> I'm currently like fullstack developer, I'm in charge of develop internal projects, like in existing component like new components. Develop stack: Ruby on Rails,
+                                            Postgres, AWS. Frontend: Hotwire (Turbo, Stumulus, Strada)
+                                        </p>
+                                        <br>
+                                        <p>
+                                            Contact: <span><a href="http://coati.mx" class="contact">coati.mx</a></span>
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="last" role="tabpanel" aria-labelledby="last-tab">
+                                        <p>
+                                            <span class="title-main">Ideeo 4.0</span> <i class="fas fa-arrow-right"></i> <span class="fst-italic fw-lighter text-secondary"> April 2021 - August 2020</span>
+                                        </p>
+                                        <p class="fw-lighter">Sr Front End Developer</p>
+                                        <p>
+                                            <span class="fw-lighter">Responsabilities:</span> I was front end developer, I was in charged of develop in experiences for a famous bank, I developed a library for custom avatars from ArterEffects and dotLottie
+                                            using frames and layers in Javascript.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            Contact: <span><a href="http://ideeo.mx" class="contact">ideeo.mx</a></span>
+                                        </p>
+
+
+                                    </div>
+                                    <div class="tab-pane fade" id="legacy" role="tabpanel" aria-labelledby="legacy-tab">
+                                        <p>
+                                            <span class="title-main">Vesparum Technologies</span> <i class="fas fa-arrow-right"></i> <span class="fst-italic fw-lighter text-secondary"> May 2020 - April 2021</span>
+                                        </p>
+                                        <p class="fw-lighter">Jr Ruby on Rails Developer</p>
+                                        <p>
+                                            <span class="fw-lighter">Responsabilities:</span> I was Ruby on Rails developer, I was in charged of develop in a different components of projects(new requeriments and manteinance). And I was mockup websites
+                                            like <a href="http://ectagono.com" class="ectagono">ectagono.com</a> using html, css and Javascript. I'lear about this framework (Ruby on Rails) here from zero.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            Contact: <span><a href="http://vespatechno.com" class="contact">vespatechno.com</a></span>
+                                        </p>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="ror" role="tabpanel" aria-labelledby="ror-tab">
+                                        <p>
+                                            <span class="title-main">Ruby on Rails <i class="far fa-gem"></i></span> <i class="fas fa-arrow-right"></i> <span class="fst-italic fw-lighter text-secondary"> Since May 2020 Current( <span class="text-rb" id="current-ror"></span>                                            ) </span>
+                                        </p>
+                                        <p class="fw-bold">Main Projects</p>
+                                        <ul class="row gem-list">
+                                            <li class="col-12 mb-3">
+                                                <p>MIS <span class="fst-italic fw-lighter">More Information for Students. Vocational test platform</span></p>
+                                                <p><span class="fw-light">Activities:</span> My principal activities in this project were:</p>
+                                                <ul class="activities-list">
+                                                    <li>Dashboard and general frontend</li>
+                                                    <li>Payment module</li>
+                                                    <li>Coupons module</li>
+                                                    <li>Report PDF of tests</li>
+                                                    <li>Deploy graph of test results</li>
+                                                </ul>
+                                            </li>
+                                            <li class="col-12 mb-3">
+                                                <p>Ectagono <span class="fst-italic fw-lighter">Events platform</span></p>
+                                                <p><span class="fw-light">Activities:</span> My principal activities in this project were:</p>
+                                                <ul class="activities-list">
+                                                    <li>Website mokup</li>
+                                                    <li>Coupons module</li>
+                                                    <li>Payment module</li>
+                                                    <li>Adjustments in providers registry</li>
+                                                </ul>
+                                            </li>
+                                            <li class="col-12 mb-3">
+                                                <p>Enfoque <span class="fst-italic fw-lighter">Trainees and companies platform</span></p>
+                                                <p><span class="fw-light">Activities:</span> My principal activities in this project were:</p>
+                                                <ul class="activities-list">
+                                                    <li>Create, models to database</li>
+                                                    <li>Integrate auth with devise</li>
+                                                    <li>Add theme from gull theme</li>
+                                                    <li>Generate reports trainees and companies</li>
+                                                    <li>Charge files whith active storage</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <p class="fw-bold">Known GEMS</p>
+                                        <ul class="row gem-list">
+                                            <li class="col-3">Devise</li>
+                                            <li class="col-3">Sidekiq</li>
+                                            <li class="col-3">Prawn</li>
+                                            <li class="col-3">Google Qr</li>
+                                            <li class="col-3">Will-paginate</li>
+                                            <li class="col-3">Gon</li>
+                                            <li class="col-3">Openpay</li>
+                                            <li class="col-3">Paypal</li>
+                                            <li class="col-3">Prawn</li>
+                                            <li class="col-3">Ajax-data-tables</li>
+                                            <li class="col-3">PG</li>
+                                            <li class="col-3">Fastercsv</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row my-3">
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <div class="card">
                                 <div class="card-body scroll">
                                     <p class="title mb-3">
                                         Courses
                                     </p>
+                                    <div class="card mb-3 course-item" style="background-color: #eeeeee;">
+                                        <div class="card-body text-center">
+                                            <p class="course-title text-center">The Complete Ruby on Rails<br> Developer Course</p>
+                                            <p class="course-inst fw-light">Mashrur Hossain <span class="fst-italic fw-lighter">48 Hours</span></p>
+                                            <p class="course-acad"><a href="https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/">udemy.com</a> |
+                                                <a target="blank_" href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-ccd38bc2-f83e-4ef6-a5df-ecf18461c261.pdf"><i class="fas fa-file-download"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 course-item" style="background-color: #eeeeee;">
+                                        <div class="card-body text-center">
+                                            <p class="course-title text-center">Master en JavaScript: Aprender JS,<br> jQuery, Angular, NodeJS</p>
+                                            <p class="course-inst fw-light">Víctor Robles <span class="fst-italic fw-lighter">32 Hours</span></p>
+                                            <p class="course-acad"><a href="https://www.udemy.com/course/master-en-javascript-aprender-js-jquery-angular-nodejs-y-mas/">udemy.com</a> |
+                                                <a target="blank_" href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-290c187f-e005-421a-9984-833c4b9f9a34.pdf"><i class="fas fa-file-download"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3 course-item" style="background-color: #eeeeee;">
+                                        <div class="card-body text-center">
+                                            <p class="course-title text-center">Angular: De cero a experto</p>
+                                            <p class="course-inst fw-light">Fernando Herrera <span class="fst-italic fw-lighter">35,5 Hours</span></p>
+                                            <p class="course-acad"><a href="https://www.udemy.com/course/angular-2-fernando-herrera/">udemy.com</a> |
+                                                <a target="blank_" href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-1a37d979-9164-41f6-a37c-eaf2f57fae69.pdf"><i class="fas fa-file-download"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-header">
 
-                                </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6 mt-3 mt-md-0">
                             <div class="card">
                                 <div class="card-body scroll">
                                     <p class="title mb-3">
                                         School trajectory
                                     </p>
+                                    <div class="card mb-3 course-item" style="background-color: #eeeeee;">
+                                        <div class="card-body text-center">
+                                            <p class="course-title text-center">Software Engineer</p>
+                                            <p class="course-inst fw-light">Polytechnic University of Pachuca</p>
+                                            <p class="course-acad"><a href="http://upp.edu.mx">upp.edu.mx</a> |
+                                                <a target="blank_" href="http://www.upp.edu.mx/ofertaeducativa/mc/ingsof/Plan-SOFW-2017.pdf"><i class="fas fa-file-download"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-header"></div>
                             </div>
                         </div>
                     </div>
@@ -142,6 +316,22 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script tyoe="text/javascript">
+        let initTime = new Date(2020, 04, 1);
+        let today = new Date();
+        let total = dateDifference(today, initTime)
+        document.getElementById('current-ror').textContent = `${parseInt(total / 365)} years, ${parseInt((total % 365) / 30)} months`;
+
+        function dateDifference(date2, date1) {
+            const _MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+            // Discard the time and time-zone information.
+            const utc1 = Date.UTC(date1.getFullYear(), date1.getMonth(), date1.getDate());
+            const utc2 = Date.UTC(date2.getFullYear(), date2.getMonth(), date2.getDate());
+
+            return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+        }
+    </script>
 </body>
 
 </html>
